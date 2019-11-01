@@ -36,6 +36,11 @@ void show(){
 	stroke(255);
 	line(x,y,0,0);
 	popMatrix();
+	if(x>700||y>700){
+		x=0;
+		y=0;
+		rad = 1;
+	}
 }
 void move(){
 x=x+(float)Math.cos(ang)*mySpeed;
