@@ -1,13 +1,13 @@
 //your code here
 Particle [] bob = new Particle[500];
-PImage = jesus;
+//PImage jesus;
 void setup()
 {
 size(1000,1000);
 background(0);
 for(int i =1 ; i<bob.length ; i++)
 	bob[i]=new Particle();
-bob[0] = new OddballParticle(jesus);
+bob[0] = new OddballParticle();
 }
 
 void draw()
@@ -56,10 +56,10 @@ rad+=.1*mySpeed;
 
 class OddballParticle extends Particle
 {
-img yes;
-float ex,why;
-OdballParticle(PImage yes){
-	yes = loadImage("jesuschrist.jpg");
+PImage yes;
+float ex,why; 
+OddballParticle(){
+	yes = loadImage("jeez.png");
 	ex=500;
 	why=500;
 }
@@ -71,5 +71,3 @@ void move(){
 	why = why + (float)(Math.random()*-1+0.5);
 }
 }
-
-
