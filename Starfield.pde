@@ -59,12 +59,12 @@ class OddballParticle extends Particle
 PImage yes;
 float ex,why; 
 OddballParticle(){
-	yes = loadImage("jeez.png");
-	ex=500;
-	why=500;
+	yes = loadImage("burrito.PNG");
+	ex=450;
+	why=450;
 }
 void show(){
-	image(yes,ex,why);
+	image(yes,ex,why,100,150);
 }
 void move(){
 	ex = ex +(float)(Math.random()*-1+0.5);
